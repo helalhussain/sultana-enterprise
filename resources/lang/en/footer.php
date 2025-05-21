@@ -17,6 +17,13 @@ return [
     'phone' =>'Phone',
     'email' =>'Email',
     'contactus' =>'Contact Us',
+    'items' =>'Our Services',
+    'page' =>'Page Links',
+    'wholesaler' =>'Wholesaling',
+    'retail' => 'Retail Selling',
+    'stone' =>'Stone, Sand and Bricks',
+    'footer_about'=>'We supply high-quality stone, sand, and bricks for construction projects, ensuring reliable delivery, competitive pricing, and excellent service to builders, contractors, and developers.',
+
 
 
 ];

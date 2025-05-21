@@ -63,7 +63,9 @@ class AboutController extends Controller
         $about->update([
             'about_us'=>$request->about_us,
             'about_us_bn'=>$request->about_us_bn,
-            'image'=>$file
+            'image'=>$file,
+            'name'=>$request->name,
+            'about_owner'=>$request->about_owner,
         ]);
         return response()->json(['message' => 'About us updated successfully']);
     }

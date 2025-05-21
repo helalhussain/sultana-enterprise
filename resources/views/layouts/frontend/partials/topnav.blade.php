@@ -22,18 +22,9 @@
                             <a href="{{ route('gallery.index') }}" class="dropdown-item">About Us</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button"
-                        >
-                            COMMITTEE <div class="arrow-down"></div>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="topnav-apps">
-                            {{-- <a href="{{ route('committee.index') }}" class="dropdown-item">Present Committee</a> --}}
-                            {{-- <a href="{{ route('Prev_committee') }}" class="dropdown-item">Previous Committee</a> --}}
-                        </div>
-                    </li>
+                
 
-             
+
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('notice.index') }}">

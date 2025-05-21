@@ -23,8 +23,8 @@
 
           <div class="row gy-2">
             <div class="col-lg-12 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{ uploaded_file($aboutus->image) }}" class="img-fluid img-thumbnail"
-              style="width:100%"alt="">
+              {{-- <img src="{{ uploaded_file($aboutus->image) }}" class="img-fluid img-thumbnail"
+              style="width:100%"alt=""> --}}
               {{-- <button class="btn btn-success" >Learn More</button> --}}
 
             </div>

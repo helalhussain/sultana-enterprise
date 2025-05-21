@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
     // Route::get('/account/password', [PasswordController::class, 'index'])->name('password.index');
     // Route::put('/account/password', [PasswordController::class, 'update'])->name('password.update');
 
-    // Route::get('/account/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+
     // Route::get('/account/notice/show/{id}',[DashboardController::class,'notice_show'])->name('notice.show');
     Route::get('/account/dashboard/download/{file}',[DashboardController::class,'file_download'])
     ->name('file.download');
@@ -52,7 +52,7 @@ Route::resource('/notice', NoticeController::class);
 Route::get('/about-us', [AboutController::class, 'about'])->name('about.index');
 Route::get('/gallery', [GalleryController::class, 'gallery'])->name('gallery.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
-
+    Route::post('/contact', [ContactController::class, 'contactSend'])->name('contact.send');
 require __DIR__.'/auth.php';
 
 

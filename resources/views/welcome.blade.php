@@ -109,7 +109,7 @@
     </section><!-- /Why Us Section --> --}}
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
+    {{-- <section id="clients" class="clients section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -162,7 +162,7 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section><!-- /Clients Section --> --}}
 
 
  @include('layouts.frontend.partials.item')
@@ -188,7 +188,7 @@
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
                 <a href="{{ asset('frontend') }}/assets/img/gallery/mse.jpeg"
                 style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -199,7 +199,7 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <a href="{{ asset('frontend') }}/assets/img/gallery/mse2.jpeg"
                   style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -211,7 +211,7 @@
                 </div>
               </div><!-- End Portfolio Item -->
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <a href="{{ asset('frontend') }}/assets/img/gallery/mse4.jpeg"
                   style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -222,7 +222,7 @@
                   </div>
                 </div>
               </div><!-- End Portfolio Item -->
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <a href="{{ asset('frontend') }}/assets/img/gallery/mse7.jpeg"
                   style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -234,7 +234,7 @@
                 </div>
               </div><!-- End Portfolio Item -->
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <a href="{{ asset('frontend') }}/assets/img/gallery/mse5.jpeg"
                   style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -245,7 +245,7 @@
                   </div>
                 </div>
               </div><!-- End Portfolio Item -->
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <a href="{{ asset('frontend') }}/assets/img/gallery/mes-owner.jpeg"
                   style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -256,7 +256,7 @@
                   </div>
                 </div>
               </div><!-- End Portfolio Item -->
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <a href="{{ asset('frontend') }}/assets/img/gallery/mse8.jpeg"
                   style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -267,9 +267,9 @@
                   </div>
                 </div>
               </div><!-- End Portfolio Item -->
-         
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
                   <a href="{{ asset('frontend') }}/assets/img/gallery/mse5.jpeg"
                   style="height: 250px" data-gallery="portfolio-gallery-app" class="glightbox">
@@ -305,12 +305,12 @@
 
 
    @foreach ($staffs as $staff)
-   <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+   <div class="col-lg-4 col-md-6 mx-auto d-flex" data-aos="fade-up" data-aos-delay="200">
     <div class="member shadow-lg">
-      <img src="{{ uploaded_file($staff->image) }}" style="height: 230px" class="img-fluid img-thumbnai" alt="">
+      <img src="{{ uploaded_file($staff->image) }}" style=" width:100%; margin: -1px -1px 22px -1px;" class="img-fluid img-thumbnai p-2" alt="">
       <div class="member-content">
-        <h4>{{ $staff->name }}</h4>
-        <h5>{{ $staff->designation }}</h5>
+        <h4 class="">{{ $staff->name }}</h4>
+        <h5 class="">{{ $staff->designation }}</h5>
         {{-- <p>
           Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
         </p> --}}

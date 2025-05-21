@@ -11,10 +11,26 @@
 
           <div class="row gy-4">
             <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-              <img src="{{ uploaded_file($aboutus->image) }}" class="img-fluid img-thumbnail"
-              style="width:100%"alt="">
+              {{-- <img src="{{ uploaded_file($aboutus->image) }}" class="img-fluid img-thumbnail"
+              style="width:100%"alt=""> --}}
               {{-- <button class="btn btn-success" >Learn More</button> --}}
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+        <img src="{{ uploaded_file($aboutus->image) }}" alt="About me image" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h3 class="mb-4">{{ $aboutus->name }}</h3>
+        <p class="mb-3">
+        {{ $aboutus->about_owner }}
+        </p>
 
+      </div>
+
+    </div>
+  </div>
+</section>
             </div>
             <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
               {{-- <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3> --}}
@@ -25,7 +41,7 @@
                    </p>
              </div>
               <p id="shortContent"></p>
-              <a href="{{ route('about.index') }}" id="readMoreBtn" class="btn btn-success" onclick="toggleText()">Read More</a>
+              <a href="{{ route('about.index') }}" id="readMoreBtn" class="btn btn text-white" style="background-color:#211689" onclick="toggleText()">Read More</a>
             </div>
           </div>
 

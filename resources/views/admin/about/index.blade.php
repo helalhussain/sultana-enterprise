@@ -51,15 +51,17 @@
 
                             />
                                     </div>
-                                    {{-- <div class="col-lg-12">
-                                        <div class="mb-3">
-                                            <label for="" class="form-label">আমাদের সম্পর্কে <span class="text-danger">*</span></label>
-                                            <textarea type="text" name="about_us_bn" class="form-control"  required>
-                                                {{ $about_us->about_us_bn }}
+                                    <br/>
+                                      <x-admin.form-group label="name" :value="$about_us->name ?? ''" class="mb-3" placeholder="Enter owner name"
+                                        column="col-lg-6" required /><br />
+
+                               <div class="mb-3">
+                                            <label for="" class="form-label">About Me(Owner) <span class="text-danger">*</span></label>
+                                            <textarea type="text" name="about_owner" class="form-control"  required>
+                                                {{ $about_us->about_owner }}
                                             </textarea>
                                             <span class="text-danger"></span>
                                         </div>
-                                    </div> --}}
 
 
 

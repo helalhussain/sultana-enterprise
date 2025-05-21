@@ -16,6 +16,9 @@ return new class extends Migration
             $table->longText('about_us')->nullable();
             $table->longText('about_us_bn')->nullable();
             $table->string('image')->nullable();
+            $table->string('name')->nullable();
+            $table->longText('about_owner')->nullable();
+            $table->longText('about_owner_bn')->nullable();
             $table->timestamps();
         });
     }

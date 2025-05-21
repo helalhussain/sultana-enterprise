@@ -7,10 +7,11 @@
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>{{ $setting->contact_no }}</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          {{-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> --}}
+
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -18,7 +19,7 @@
     <div class="branding d-flex align-items-cente">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="{{ route('home.page') }}" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <img src="{{ uploaded_file($logoIcon->logo) }}" alt="">
           {{-- <h1 class="sitename">Green</h1> --}}
@@ -30,7 +31,7 @@
             <li><a href="{{ route('home.page') }}" class="active">{{ __('header.home') }}</a></li>
             <li><a href="{{ route('about.index') }}">{{ __('header.aboutus') }}</a></li>
             {{-- <li><a href="#services">{{ __('header.services') }}</a></li> --}}
-         
+
             {{-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
