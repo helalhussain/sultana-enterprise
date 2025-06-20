@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Student\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 
@@ -29,6 +28,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomeController::class,'home'])->name('home.page');
+Route::get('service/{id}',[HomeController::class,'show'])->name('home.show.page');
 Route::get('lang/{lang}',[LanguageController::class, 'switchLang'])->name('lang.switch');
 Route::middleware('auth')->group(function () {
     // Route::get('/account/password', [PasswordController::class, 'index'])->name('password.index');

@@ -10,7 +10,8 @@ use App\Http\Controllers\Admin\{
     AdminController,
     ProfileController,
     UserController,
-    NoticeController,
+    ServiceController,
+    GalleryController,
     StaffController,
     AboutController,
     SlideController,
@@ -35,7 +36,8 @@ Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard')
 Route::resource('admin', AdminController::class);
 Route::resource('user', UserController::class);
 
-Route::resource('notice', NoticeController::class);
+Route::resource('service', ServiceController::class);
+Route::resource('gallery', GalleryController::class);
 Route::resource('staff', StaffController::class);
 
 Route::resource('about',AboutController::class);

@@ -9,9 +9,9 @@ use App\Models\Gallery;
 
 class GalleryController extends Controller
 {
-    public function gallery(){
-        $gallery = Gallery::all();
-        return view('frontend.gallery',compact('gallery'));
-    }
+    // public function gallery(){
+    //     $gallery = Gallery::all();
+    //     return view('frontend.gallery',compact('gallery'));
+    // }
 
 }

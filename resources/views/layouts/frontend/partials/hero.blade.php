@@ -12,18 +12,19 @@
             </div>
           </div><!-- End Carousel Item --> --}}
           <div class="carousel-item active">
-            <img src="{{ asset('frontend') }}/assets/img/hero-carousel/mse.jpeg" alt="">
+            <img src="{{ asset('frontend') }}/assets/img/hero-carousel/event1.jpeg" alt="">
             <div class="carousel-container">
                 <h2>Welcome to Sultana Enterprice</h2>
-              <p>We supply high-quality stone, sand, and bricks for construction projects, ensuring reliable delivery, competitive pricing, and excellent service to builders, contractors, and developers.</p>
+                 <p>We provide creative and elegant event decoration and management services, transforming your special occasions into unforgettable memories with customized themes, stylish designs, and professional execution.</p>
+
               <a href="{{ route('about.index') }}" class="btn-get-started">About Us</a>
             </div>
           </div><!-- End Carousel Item -->
           <div class="carousel-item">
-            <img src="{{ asset('frontend') }}/assets/img/hero-carousel/mse4.jpeg" alt="">
+            <img src="{{ asset('frontend') }}/assets/img/hero-carousel/mse.jpeg" alt="">
             <div class="carousel-container">
                 <h2>Welcome to Sultana Enterprice</h2>
-              <p>Trusted supplier of premium stone, sand, and bricks for all construction needs. We deliver durable materials on time, helping you build strong foundations with confidence.</p>
+                            <p>We supply high-quality stone, sand, and bricks for construction projects, ensuring reliable delivery, competitive pricing, and excellent service to builders, contractors, and developers.</p>
               <a href="{{ route('about.index') }}" class="btn-get-started">About Us</a>
             </div>
           </div><!-- End Carousel Item -->

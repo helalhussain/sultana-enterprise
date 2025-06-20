@@ -17,8 +17,8 @@
 <section class="py-5 bg-light">
   <div class="container">
     <div class="row align-items-center">
-        <div class="col-md-6 text-center">
-        <img src="{{ uploaded_file($aboutus->image) }}" alt="About me image" class="img-fluid rounded shadow">
+        <div class="text-center col-md-6">
+        <img src="{{ uploaded_file($aboutus->image) }}" alt="About me image" class="rounded shadow img-fluid">
       </div>
       <div class="col-md-6">
         <h3 class="mb-4">{{ $aboutus->name }}</h3>
@@ -41,7 +41,7 @@
                    </p>
              </div>
               <p id="shortContent"></p>
-              <a href="{{ route('about.index') }}" id="readMoreBtn" class="btn btn text-white" style="background-color:#211689" onclick="toggleText()">Read More</a>
+              <a href="{{ route('about.index') }}" id="readMoreBtn" class="text-white btn" style="background-color:#211689" onclick="toggleText()">Read More</a>
             </div>
           </div>
 

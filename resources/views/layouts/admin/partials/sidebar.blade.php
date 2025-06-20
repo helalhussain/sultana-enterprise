@@ -4,7 +4,7 @@
             <div data-simplebar class="h-100">
 
 
-                <div class="user-sidebar text-center">
+                <div class="text-center user-sidebar">
                     <div class="dropdown">
                         <div class="user-img">
                             @if(auth()->user()->image !="")
@@ -15,7 +15,7 @@
                             <span class="avatar-online bg-success"></span>
                         </div>
                         <div class="user-info">
-                            <h5 class="mt-3 font-size-16 text-white">{{ auth()->user()->name }}</h5>
+                            <h5 class="mt-3 text-white font-size-16">{{ auth()->user()->name }}</h5>
                             <span class="font-size-13 text-white-50" style="color:white!important">{{ auth()->user()->email }}</span>
                         </div>
                     </div>
@@ -59,7 +59,8 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
 
-                                <li><a href="{{ route('admin.notice.index') }}">Notice</a></li>
+                                <li><a href="{{ route('admin.service.index') }}">Services</a></li>
+                                <li><a href="{{ route('admin.gallery.index') }}">Gallery</a></li>
                                 <li><a href="{{ route('admin.about.index') }}">About</a></li>
                                 <li><a href="{{ route('admin.slide.index') }}">Slide</a></li>
                             </ul>

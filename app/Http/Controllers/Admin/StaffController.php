@@ -87,57 +87,57 @@ class StaffController extends Controller
      */
     public function update(Request $request, Staff $staff)
     {
-        if($request->image==null){
+        // if($request->image==null){
 
-            $staff->update([
-                'name' => $request->name,
-                'name_bn' => $request->name_bn,
-                'email' => $request->email,
-                'designation' => $request->designation,
-                'designation_bn' => $request->designation_bn,
-                'qualification' => $request->qualification,
-                'qualification_bn' => $request->qualification_bn,
-                'contact_no' => $request->contact,
-                'contact_no_bn' => $request->contact_bn,
-                'gender' => $request->gender,
-                'gender_bn' => $request->gender_bn,
-                'district' => $request->district,
-                'district_bn' => $request->district_bn,
-                'address' => $request->address,
-                'address_bn' => $request->address_bn,
-                'blood_group' => $request->blood,
-                'blood_group_bn' => $request->blood_bn,
-                'joining_date' => $request->joining,
-                'joining_date_bn' => $request->joining_bn,
+        //     $staff->update([
+        //         'name' => $request->name,
+        //         'name_bn' => $request->name_bn,
+        //         'email' => $request->email,
+        //         'designation' => $request->designation,
+        //         'designation_bn' => $request->designation_bn,
+        //         'qualification' => $request->qualification,
+        //         'qualification_bn' => $request->qualification_bn,
+        //         'contact_no' => $request->contact,
+        //         'contact_no_bn' => $request->contact_bn,
+        //         'gender' => $request->gender,
+        //         'gender_bn' => $request->gender_bn,
+        //         'district' => $request->district,
+        //         'district_bn' => $request->district_bn,
+        //         'address' => $request->address,
+        //         'address_bn' => $request->address_bn,
+        //         'blood_group' => $request->blood,
+        //         'blood_group_bn' => $request->blood_bn,
+        //         'joining_date' => $request->joining,
+        //         'joining_date_bn' => $request->joining_bn,
 
-                ]);
-        }else{
+        //         ]);
+        // }else{
 
-            $staff->update([
-                'name' => $request->name,
-                'name_bn' => $request->name_bn,
-                'email' => $request->email,
-                'designation' => $request->designation,
-                'designation_bn' => $request->designation_bn,
-                'qualification' => $request->qualification,
-                'qualification_bn' => $request->qualification_bn,
-                'contact_no' => $request->contact,
-                'contact_no_bn' => $request->contact_bn,
-                'gender' => $request->gender,
-                'gender_bn' => $request->gender_bn,
-                'district' => $request->district,
-                'district_bn' => $request->district_bn,
-                'address' => $request->address,
-                'address_bn' => $request->address_bn,
-                'blood_group' => $request->blood,
-                'blood_group_bn' => $request->blood_bn,
+        //     $staff->update([
+        //         'name' => $request->name,
+        //         'name_bn' => $request->name_bn,
+        //         'email' => $request->email,
+        //         'designation' => $request->designation,
+        //         'designation_bn' => $request->designation_bn,
+        //         'qualification' => $request->qualification,
+        //         'qualification_bn' => $request->qualification_bn,
+        //         'contact_no' => $request->contact,
+        //         'contact_no_bn' => $request->contact_bn,
+        //         'gender' => $request->gender,
+        //         'gender_bn' => $request->gender_bn,
+        //         'district' => $request->district,
+        //         'district_bn' => $request->district_bn,
+        //         'address' => $request->address,
+        //         'address_bn' => $request->address_bn,
+        //         'blood_group' => $request->blood,
+        //         'blood_group_bn' => $request->blood_bn,
 
-                'joining_date' => $request->joining,
-                'joining_date_bn' => $request->joining_bn,
-                'image' => file_upload($request->image, 'staff'),
-                ]);
+        //         'joining_date' => $request->joining,
+        //         'joining_date_bn' => $request->joining_bn,
+        //         'image' => file_upload($request->image, 'staff'),
+        //         ]);
 
-        }
+        // }
         // dd($request->all());
 
         return redirect()->route('admin.staff.index')->with('success','Success');
