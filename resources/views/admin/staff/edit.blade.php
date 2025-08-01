@@ -57,7 +57,7 @@
                                     </option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                        <option value="Other">Other</option>
+
                                     </x-admin.form-group>
 
                                     <div class="col-lg-6">
@@ -68,7 +68,7 @@
                                                     {{ $staff->gender_bn ? $staff->gender_bn : 'লিঙ্গ নির্বাচন করুন' }}
                                                 <option value="পুরুষ">পুরুষ</option>
                                                 <option value="নারী">নারী</option>
-                                                <option value="অন্যন্য">অন্যন্য</option>
+
                                             </select>
                                             <span class="text-danger"></span>
                                         </div>
