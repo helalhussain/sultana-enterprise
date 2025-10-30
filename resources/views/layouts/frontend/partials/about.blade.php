@@ -48,6 +48,7 @@
         </div>
 
       </section><!-- /About Section -->
+
 <script>
 
 const contentEl = document.getElementById("content");
